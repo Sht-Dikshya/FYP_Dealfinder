@@ -16,39 +16,51 @@ body {
 }
 
 /* Typography Helpers */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
-p, span {
+
+p,
+span {
     font-weight: 400;
 }
+
 .btn {
     font-weight: 500;
     border-radius: 20px;
 }
+
 .btn-primary-custom {
     background-color: var(--accent);
     color: var(--white);
     border: none;
 }
+
 .btn-primary-custom:hover {
     background-color: var(--text-color);
     color: var(--white);
 }
+
 .btn-compare {
     background-color: transparent;
     color: var(--accent);
     border: 1px solid var(--accent);
     font-weight: 500;
 }
+
 .btn-compare:hover {
     background-color: var(--accent);
     color: var(--white);
 }
 
 /* Top Header Mishisa Style */
-.logo img { 
-    height: 40px;
+.logo img {
+    height: 55px;
     cursor: pointer;
 }
 
@@ -57,10 +69,12 @@ p, span {
     padding: 15px 0;
     border-bottom: 2px solid var(--secondary);
 }
+
 .search-container {
     position: relative;
     width: 100%;
 }
+
 .search-input {
     width: 100%;
     border-radius: 25px;
@@ -68,6 +82,7 @@ p, span {
     border: 1px solid #ddd;
     outline: none;
 }
+
 .search-icon {
     position: absolute;
     right: 15px;
@@ -75,6 +90,7 @@ p, span {
     transform: translateY(-50%);
     color: var(--text-color);
 }
+
 .header-icons a {
     color: var(--text-color);
     text-decoration: none;
@@ -83,15 +99,18 @@ p, span {
     align-items: center;
     gap: 5px;
 }
+
 .header-icons a:hover {
     color: var(--accent);
 }
 
 /* Navigation Bar */
 .main-nav {
-    background-color: var(--accent); /* Updated from orange-red to accent */
+    background-color: var(--accent);
+    /* Updated from orange-red to accent */
     padding: 0;
 }
+
 .main-nav .navbar-nav .nav-link {
     color: var(--white);
     font-weight: 500;
@@ -99,6 +118,7 @@ p, span {
     text-decoration: none;
     position: relative;
 }
+
 .main-nav .navbar-nav .nav-link:hover::after {
     content: '';
     position: absolute;
@@ -109,15 +129,21 @@ p, span {
     background-color: var(--white);
     animation: slideIn 0.3s ease;
 }
+
 @keyframes slideIn {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 /* Category Dropdown Styling */
 .dropdown-menu-custom {
     border: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
@@ -125,22 +151,25 @@ p, span {
 .product-card {
     background-color: var(--white);
     border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
     height: 100%;
 }
+
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
 .product-image {
     width: 100%;
     height: 200px;
     object-fit: contain;
     margin-bottom: 15px;
 }
+
 .price-tag {
     font-weight: 600;
     color: var(--accent);
@@ -151,35 +180,45 @@ p, span {
 .hero-carousel {
     position: relative;
 }
+
 .hero-carousel .carousel-item img {
     border-radius: 16px;
     object-fit: cover;
     height: 400px;
 }
+
 .carousel-control-prev {
     left: -5%;
     width: auto;
 }
+
 .carousel-control-next {
     right: -5%;
     width: auto;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0,0,0,0.6);
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 50%;
     padding: 25px;
 }
 
 @media (max-width: 768px) {
-    .carousel-control-prev { left: 0; }
-    .carousel-control-next { right: 0; }
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
 }
 
 /* Brands Grid */
 .brand-box {
     background: var(--white);
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -187,11 +226,13 @@ p, span {
     height: 100px;
     transition: transform 0.2s;
 }
+
 .brand-box img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
+
 .brand-box:hover {
     transform: scale(1.05);
 }
@@ -203,12 +244,14 @@ footer {
     padding: 50px 0 20px;
     margin-top: 50px;
 }
+
 .footer-link {
     color: var(--text-color);
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
 }
+
 .footer-link:hover {
     color: var(--accent);
 }
@@ -220,13 +263,15 @@ footer {
     padding: 40px;
     background: var(--white);
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
+
 .auth-input {
     border-radius: 25px;
     padding: 12px 20px;
     border: 1px solid #ddd;
 }
+
 .auth-input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 0.2rem rgba(196, 139, 159, 0.25);
@@ -237,9 +282,10 @@ footer {
     background-color: var(--primary);
     color: var(--text-color);
 }
+
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,.125);
+    border-color: rgba(0, 0, 0, .125);
 }
 
 .text-accent {
@@ -250,6 +296,8 @@ footer {
     cursor: pointer;
     transition: color 0.2s;
 }
-.btn-wishlist.active, .btn-wishlist:hover {
+
+.btn-wishlist.active,
+.btn-wishlist:hover {
     color: var(--accent) !important;
 }
